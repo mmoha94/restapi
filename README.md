@@ -1,2 +1,3 @@
 # restapi
-Workshop for Special Issues in Ebnehesam College (TVU Iran)
+تمرینات برنامه نویسی درس مباحث ویژه
+گروه کامپیوتر آموزشکده فنی پسران بیرجند (ابن حسام)
