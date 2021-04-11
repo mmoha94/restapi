@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "a66d8875-0679-4524-9c85-ee9a3bbf4124",
+		"_postman_id": "967eaa34-5b21-4b8f-9396-196504e9c5fb",
 		"name": "J06",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -10,7 +10,21 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://127.0.0.1/restapi/j06/api1.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restapi",
+						"j06",
+						"api1.php"
+					]
+				}
 			},
 			"response": []
 		},
@@ -19,7 +33,21 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://127.0.0.1/restapi/j06/api2.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restapi",
+						"j06",
+						"api2.php"
+					]
+				}
 			},
 			"response": []
 		},
@@ -28,25 +56,98 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://127.0.0.1/restapi/j06/api3.php?bid=100",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restapi",
+						"j06",
+						"api3.php"
+					],
+					"query": [
+						{
+							"key": "bid",
+							"value": "100"
+						}
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Api4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tool",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "arz",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/restapi/j06/api4.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restapi",
+						"j06",
+						"api4.php"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Api5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"body": {
+					"mode": "raw",
+					"raw": "{\"tool\":300 , \"arz\" : 40}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/restapi/j06/api5.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restapi",
+						"j06",
+						"api5.php"
+					]
+				}
 			},
 			"response": []
 		}
