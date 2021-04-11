@@ -1,5 +1,5 @@
 <?php
-$url = "http://127.0.0.1/mabahes/sess06/api5.php";
+$url = "http://127.0.0.1/restapi/j06/api5.php";
 
 $data=['tool'=>134 , 'arz'=>35];
 $json_data = json_encode($data);
