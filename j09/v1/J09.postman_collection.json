@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "a56ecc89-7111-4c37-97b4-3606c029bd22",
+		"name": "J09",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Book-index",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"section\":\"studs\",\"method\":\"index\",\"data\":[]}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/restapi/j09/v1/api.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restapi",
+						"j09",
+						"v1",
+						"api.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book-edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"section\":\"studs\",\"method\":\"edit\",\"data\":{\"sid\":\"100\"}}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/restapi/j09/v1/api.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restapi",
+						"j09",
+						"v1",
+						"api.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book-update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"section\":\"studs\",\"method\":\"update\",\"data\":{\"sid\":\"100\",\"name\":\"ali\",\"avgr\":\"17\",\"fid\":\"5\" }}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/restapi/j09/v1/api.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restapi",
+						"j09",
+						"v1",
+						"api.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book-search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"section\":\"studs\",\"method\":\"search\",\"data\":{\"sid\":\"100\" }}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/restapi/j09/v1/api.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restapi",
+						"j09",
+						"v1",
+						"api.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
