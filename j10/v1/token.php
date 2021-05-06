@@ -22,7 +22,6 @@ function Response($status , $message , $token='' )
 }
 
 $req = file_get_contents("php://input");
-echo $req;
 parse_str($req , $params);
 $uname = $params['username'];
 $upass = $params['password'];
