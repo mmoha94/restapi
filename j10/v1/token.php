@@ -9,26 +9,20 @@ function randStr($length = 10) {
     }
     return $randomString;
 }
-function Response1($status , $message )
-{
-    header("Content-Type:application/json");
-    header("HTTP/1.1 $status");
-    $res['message'] = $message ;
-    echo json_encode($res);
-    exit;
-}
 function Response($status , $message , $token='' )
 {
     header("Content-Type:application/json");
     header("HTTP/1.1 $status");
-    $res['status'] =  $status ;
+    $res['status']       =  $status ;
+    $res['message']      =  $message ;
     $res['access_token'] =  $token ;
-    $res['token_type'] = 'bearer';
+    $res['token_type']   = 'bearer';
     echo json_encode($res);
     exit;
 }
 
 $req = file_get_contents("php://input");
+echo $req;
 parse_str($req , $params);
 $uname = $params['username'];
 $upass = $params['password'];
@@ -45,7 +39,7 @@ if($user)
          where uid=$uid ";
    mysqli_query($conn , $sql);      
    Response(200,"OK",$token);
-} else  Response1(401,"access denied");  
+} else  Response(401,"access denied");  
 
 
 
