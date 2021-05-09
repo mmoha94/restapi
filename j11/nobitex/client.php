@@ -28,7 +28,7 @@ function getToken($data)
     curl_setopt($client , CURLOPT_POST , 1) ;
     curl_setopt($client , CURLOPT_POSTFIELDS , $query ) ;
     $res= curl_exec($client);  
-    echo $res;exit;  
+    //echo $res;exit;  
     curl_close($client);
     $res = json_decode($res);
     return $res ; 
@@ -36,8 +36,9 @@ function getToken($data)
 
 function Request($method , $data=[] )
 {
+    $key = $_SESSION['key'];
     $header=["Content-Type:application/json",
-             "Authorization:Token 28c266849aa46ab021c8ff278a25aaa95a82d0da"];
+             "Authorization:Token $key"];
 
     $url = "https://api.nobitex.ir/users/".$method;
 
