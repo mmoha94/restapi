@@ -20,8 +20,8 @@ namespace Amoozesh
     }
     class Reply
     {
-        public string status;
-        public string msg;
+        public string  status;
+        public string  message;
         public dynamic data;
     }
     class Req
@@ -48,11 +48,11 @@ namespace Amoozesh
             try
             {
                 WebResponse response = request.GetResponse();
-                Stream recStream = response.GetResponseStream();
+                Stream resStream = response.GetResponseStream();
                 Encoding encode = Encoding.GetEncoding("utf-8");
-                StreamReader readSteam = new StreamReader(recStream, encode);
-                string res = readSteam.ReadToEnd();
-                readSteam.Close();
+                StreamReader readStream = new StreamReader(resStream, encode);
+                string res = readStream.ReadToEnd();
+                readStream.Close();
                 response.Close();
                 return res;
             }
@@ -71,6 +71,7 @@ namespace Amoozesh
             req.method=method;
             req.data=data;
             string json_data = JsonConvert.SerializeObject(req);
+
             byte[] arr = Encoding.UTF8.GetBytes(json_data);
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
@@ -87,15 +88,15 @@ namespace Amoozesh
                 WebResponse response = request.GetResponse();
                 Stream recStream = response.GetResponseStream();
                 Encoding encode = Encoding.GetEncoding("utf-8");
-                StreamReader readSteam = new StreamReader(recStream, encode);
-                string res = readSteam.ReadToEnd();
-                readSteam.Close();
+                StreamReader readStream = new StreamReader(recStream, encode);
+                string res = readStream.ReadToEnd();
+                readStream.Close();
                 response.Close();
                 return res;
             }
             catch (WebException ex)
             {
-                return ex.Message;
+                return ((HttpWebResponse)ex.Response).StatusCode.ToString();
             }
         }
 

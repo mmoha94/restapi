@@ -32,6 +32,6 @@ C:\wamp64\www\restapi\j12\Amoozesh\bin\Debug\Newtonsoft.Json.pdb
 C:\wamp64\www\restapi\j12\Amoozesh\bin\Debug\Newtonsoft.Json.xml
 C:\wamp64\www\restapi\j12\Amoozesh\obj\Debug\Amoozesh.csprojResolveAssemblyReference.cache
 C:\wamp64\www\restapi\j12\Amoozesh\obj\Debug\Amoozesh.frmLogin.resources
-C:\wamp64\www\restapi\j12\Amoozesh\obj\Debug\Amoozesh.frmMain.resources
 C:\wamp64\www\restapi\j12\Amoozesh\obj\Debug\Amoozesh.Properties.Resources.resources
 C:\wamp64\www\restapi\j12\Amoozesh\obj\Debug\Amoozesh.csproj.GenerateResource.Cache
+C:\wamp64\www\restapi\j12\Amoozesh\obj\Debug\Amoozesh.Stud.resources
